@@ -1,0 +1,176 @@
+/* Montaser Arabic*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../FONTES/Montserrat.Thin250.otf');
+    font-weight: 250;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../FONTES/Montserrat.Light300.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../FONTES/Montserrat.Regular400.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../FONTES/Montserrat.SemiBold600.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    margin: auto;
+}
+
+header{
+    top: 0;
+    display: flex;
+    position:sticky ;
+    z-index: 5;
+    a{
+        text-decoration: none;
+        color: #5b289e;
+        font-weight: bold;
+    }
+    a:hover{
+        color: #ba9de0;
+    }
+}
+
+.titulo-site{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    position: fixed;
+    position: absolute;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 0 0.5vw #12419212;
+    padding: 0.5%;
+    img{
+        margin: auto;
+        margin-right: 4vw;
+        align-self: center;
+        height: 10vw;
+        min-height: 80%;
+    }
+    section{
+        margin: auto;
+        margin-left: -3vw;
+        text-align:start;
+        font-family: 'Montserrat'; /*ADICIONEI A FONTE OFICIAL DA LOGO*/
+        /*TIVE QUE SEPARAR SEU H1 DO H2*/
+        h1{
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 0; /*APROXIMEI AS DUAS FRASES*/
+            letter-spacing: 9%; /*ADICIONEI UM ESPAÇO NAS LETRAS DO NOME DO PROJETO*/
+            color: #8e6db5; /*ADICIONEI A COR DA LOGO*/
+        }
+        h2{
+            margin-bottom: 0;
+            text-align: center;
+            margin-top: 0; /*APROXIMEI AS DUAS FRASES*/
+            font-weight: 300; /*DEIXEI A LETRA COM DESTAQUE MENOR QUE A DE CIMA*/
+            color: #5b289e;
+        }
+    }
+}
+#menu{
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    position: absolute;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 1 0.5vw #12419212;
+    ul{
+        height: 2vw;
+        text-align: center;
+        align-content: center;
+        list-style: none;
+        li{
+            display: inline-block;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+    }
+}
+.pagina-atual{
+    color: #ba9de0; /*PRA OPÇÃO DO MENU REFERENTE A PAGINA ATUAL ESTAR EM COR DIFERENTE*/
+}
+#rodape{
+    background-color: #8e6fb3;
+    box-shadow: 0 0 0.5vw #12419241;
+        font-family: 'Glacial'; /*ADICIONEI A FONTE DO PROJETO*/
+    h4{
+        margin: 0;
+        color: #ffffff;
+        text-align: center;
+        align-content: center;
+        padding: 0.3%;
+    }
+    .listra{
+        background-color: #8263a4;
+        padding: 0.5%;
+        display: flex;
+        flex-direction: column;
+                 align-items: center;
+        img{
+            padding-top: 1%;
+            width: 40%;
+            align-items: center;
+        }
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        padding: 0.8%;
+        img{
+            margin: auto;
+            margin-right: 4vw;
+            align-self: center;
+            height: 10vw;
+            min-height: 80%;
+        }
+        h2{
+            text-align: left;
+            color: #ffffff;
+            margin-bottom: -0.1vw;
+        }
+        a{
+            text-decoration: none;
+            color: #dbd4e1;
+        }
+        a:hover{
+            color: #FFFFFF;
+        }
+        ul{
+            text-align: left;
+            list-style: none;
+            hr{
+                color: #ffffff;
+                border-style: solid;
+                margin-left: 0;
+                width: 1.9vw;
+                box-shadow: 0 0 10px #3c66a02d;
+            }
+            li{
+                padding-bottom: 0.7%;
+                display:flex;
+            }
+            #icon-rodape{
+                margin-left: 0.1vw;
+                margin-right: 0.5vw;
+                height: 1.5vw;
+                min-height: 1vw;
+            }
+        }
+    }
+}
